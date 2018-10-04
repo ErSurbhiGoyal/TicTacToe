@@ -19,6 +19,7 @@
         android:textColor="@color/white" />
 
     <LinearLayout
+        android:id="@+id/llScoreCard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtScoreCard"
@@ -82,8 +83,13 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:id="@+id/llGame"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         android:orientation="vertical">
 
         <LinearLayout
@@ -91,12 +97,130 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="x"
-                android:textColor="@color/white"/>
+            <Button
+                android:id="@+id/btn_one"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@color/colorPrimary"
+                android:layout_margin="5dp"
+                android:textColor="@color/white"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <Button
+                android:id="@+id/btn_two"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@color/colorPrimary"
+                android:layout_margin="5dp"
+                android:textColor="@color/white"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <Button
+                android:id="@+id/btn_three"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@color/colorPrimary"
+                android:layout_margin="5dp"
+                android:textColor="@color/white"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/btn_four"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@color/colorPrimary"
+                android:layout_margin="5dp"
+                android:textColor="@color/white"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <Button
+                android:id="@+id/btn_five"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@color/colorPrimary"
+                android:layout_margin="5dp"
+                android:textColor="@color/white"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <Button
+                android:id="@+id/btn_six"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@color/colorPrimary"
+                android:layout_margin="5dp"
+                android:textColor="@color/white"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_seven"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@color/colorPrimary"
+                android:layout_margin="5dp"
+                android:textColor="@color/white"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <Button
+                android:id="@+id/btn_eight"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@color/colorPrimary"
+                android:layout_margin="5dp"
+                android:textColor="@color/white"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <Button
+                android:id="@+id/btn_nine"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@color/colorPrimary"
+                android:layout_margin="5dp"
+                android:textColor="@color/white"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llGameSetting"
+        android:layout_below="@+id/llGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btn_new_game"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Game"
+            android:layout_weight="0.5"
+            android:textColor="@color/black"/>
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RESET"
+            android:layout_weight="0.5"
+            android:textColor="@color/black"/>
 
     </LinearLayout>
 
