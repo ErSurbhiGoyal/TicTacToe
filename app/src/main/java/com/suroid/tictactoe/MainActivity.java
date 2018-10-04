@@ -7,6 +7,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import butterknife.InjectView;
+
 public class MainActivity extends AppCompatActivity {
 
     Button b[][] = new Button[4][4];
@@ -59,7 +61,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-
         b[1][1] = (Button) findViewById(R.id.btn_one);
         b[1][2] = (Button) findViewById(R.id.btn_two);
         b[1][3] = (Button) findViewById(R.id.btn_three);
